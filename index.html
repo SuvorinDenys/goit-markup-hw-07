@@ -74,102 +74,113 @@
                         <div class="form-user">
                             <label for="user-name" name="name" class="form-user__label">Имя</label>
                             <input type="text" id="user-name" name="user-name" class="form-user__input">
-                            <svg class="modal-form-svg" width=18 height=18>
+                            <svg class="form-user__icon" width=18 height=18>
                                 <use href="./images/icons.svg#icon-form-person"></use>
                             </svg>
                         </div>
 
-                        <div class="modal-form-field">
-                            <label for="phone" class="modal-form-label">Телефон</label>
-                            <input type="text" class="modal-form-input" name="phone-number" id="phone">
-                            <svg class="modal-form-svg" width=18 height=18>
+                        <div class="form-user">
+                            <label for="user-tel" name="tel" class="form-user__label">Телефон</label>
+                            <input type="tel" id="user-tel" name="tel" class="form-user__input" required >
+                            <svg class="form-user__icon" width=18 height=18>
                                 <use href="./images/icons.svg#icon-form-phone"></use>
                             </svg>
                         </div>
 
-                        <div class="modal-form-field">
-                            <label for="email" class="modal-form-label">Почта</label>
-                            <input type="text" class="modal-form-input" name="email-name" id="email">
-                            <svg class="modal-form-svg" width=18 height=18>
+                        <div class="form-user">
+                            <label for="user-email" name="email" class="form-user__label">Почта</label>
+                            <input type="email" id="user-email" name="email" class="form-user__input" required>
+                            <svg class="form-user__icon" width=18 height=18>
                                 <use href="./images/icons.svg#icon-form-email"></use>
                             </svg>
                         </div>
 
-                        <div class="modal-form-field">
-                            <label for="comment" class="modal-form-label">Коментарий</label>
-                            <textarea class="modal-form-textarea" name="comment-name" id="comment" rows="10"
+                        <div class="comment">
+                            <label for="feedback" name="feedback" class="comment__label">Коментарий</label>
+                            <textarea name="feedback" id="feedback" class="comment__textarea" rows="10"
                             placeholder="Введите текст"></textarea>                                
                         </div>
 
-                        <label class="checkbox-label">
-                            <input class="checkbox" type="checkbox" name="checkbox" value="checkbox">
-                            <span class="checkbox-icon">
+                        <label name="checkbox" class="form__checkbox-label">
+                            <input type="checkbox" name="checkbox" class="checkbox" value="form__checkbox-input">
+                            <span class="form__checkbox-icon">
                                 <svg width=16 height=15>
                                     <use href="./images/icons.svg#icon-form-check"></use>
                                 </svg>
                             </span>
                             Соглашаюсь с рассылкой и принимаю
-                            <a href="./index.html" class="terms-link">Условия договора</a>
+                            <a href="./index.html" class="form__checkbox-link">Условия договора</a>
                         </label>
 
-                        <button type="submit" class="form-button">Отправить</button>
+                        <button type="submit" class="button form__button">Отправить</button>
                     </form>
                 </div>
             </div>
             <!-- End of Hero section -->                               
                 
             <!-- Features -->
-            <section class="section features-section">
-                <div class="container second-background-color">
-                    <h2 class="features">Особенности</h2>
+            <section class="section section--top">
+                
+                <div class="container">
+
+                    <h2 class="section__title section__title--visually-hidden">Особенности</h2>
+                    
                     <ul class="features-list">
-                    <li>
-                        <div class="features-icon">
-                            <svg class="icon" width="70" height="70">
-                                <use href="./images/icons.svg#icon-antenna"></use>
-                            </svg>
-                        </div>
-                        <h3 class="features-header">Внимание к деталям</h3>
-                        <p class="features-paragraph">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
-                    </li>
-                    <li>
-                        <div class="features-icon">
-                            <svg class="icon" width="70" height="70">
-                                <use href="./images/icons.svg#icon-clock"></use>
-                            </svg>
-                        </div>
-                        <h3 class="features-header">Пунктуальность</h3>
-                        <p class="features-paragraph">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
-                    </li>
-                    <li>
-                        <div class="features-icon">
-                            <svg class="icon" width="70" height="70">
-                                <use href="./images/icons.svg#icon-diagram"></use>
-                            </svg>
-                        </div>
-                        <h3 class="features-header">Планирование</h3>
-                        <p class="features-paragraph">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
-                    </li>
-                    <li>
-                        <div class="features-icon">
-                            <svg class="icon" width="70" height="70">
-                                <use href="./images/icons.svg#icon-astronaut"></use>
-                            </svg>
-                        </div>
-                        <h3 class="features-header">Современные технологии</h3>
-                        <p class="features-paragraph">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
-                    </li>
+                        
+                        <li class="features-list__item">
+                            <div class="features-list__icon">
+                                <svg class="icon" width="70" height="70">
+                                    <use href="./images/icons.svg#icon-antenna"></use>
+                                </svg>
+                            </div>
+                            <h3 class="features-list__title">Внимание к деталям</h3>
+                            <p class="features-list__text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+                        </li>
+
+                        <li class="features-list__item">
+                            <div class="features-list__icon">
+                                <svg class="icon" width="70" height="70">
+                                    <use href="./images/icons.svg#icon-clock"></use>
+                                </svg>
+                            </div>
+                            <h3 class="features-list__title">Пунктуальность</h3>
+                            <p class="features-list__text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
+                        </li>
+
+                        <li class="features-list__item">
+                            <div class="features-list__icon">
+                                <svg class="icon" width="70" height="70">
+                                    <use href="./images/icons.svg#icon-diagram"></use>
+                                </svg>
+                            </div>
+                            <h3 class="features-list__title">Планирование</h3>
+                            <p class="features-list__text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
+                        </li>
+                        
+                        <li class="features-list__item">
+                            <div class="features-list__icon">
+                                <svg class="icon" width="70" height="70">
+                                    <use href="./images/icons.svg#icon-astronaut"></use>
+                                </svg>
+                            </div>
+                            <h3 class="features-list__title">Современные технологии</h3>
+                            <p class="features-list__text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+                        </li>
                     </ul>
                 </div>
             </section>
             <!-- End of Features -->
                 
-            <!-- Our work -->
+            <!-- Work -->
             
             <section class="section">
-                <div class="container second-background-color">
-                    <h2 class="our-work">Чем мы занимаемся</h2>
-                    <ul class="our-work-images-list">
+                
+                <div class="container">
+                    
+                    <h2 class="section__title">Чем мы занимаемся</h2>
+                    
+                    <ul class="work-list">
+                        
                         <li>
                             <div class="work-thumb">
                                 <img src="./images/box1.jpg" width="370" alt="десктопные решения">
@@ -199,7 +210,7 @@
                     </ul>
                 </div>
             </section>                                       
-            <!-- End of Our work -->
+            <!-- End Work -->
                 
             <!-- Our Team -->
             <section class="section our-team-section">
