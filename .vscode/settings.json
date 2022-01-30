@@ -23,4 +23,5 @@
         "Examples/**"
     ],
     "liveSassCompile.settings.showOutputWindowOn": "Debug",
+    "liveServer.settings.showOnStatusbar": true
 }
