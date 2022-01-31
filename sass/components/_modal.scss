@@ -22,6 +22,8 @@
   left: 50%;
   padding: 40px;
 
+  z-index: 2;
+
   transform: translate(-50%, -50%) scale(1);
   width: 528px;
   min-height: 581px;
@@ -63,7 +65,7 @@
     background-color: transparent;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
-    transition: fill $cubic $animation, border $cubic $animation;
+    transition: fill $cubic $animation, border 250ms $cubic $animation;
   }
 }
 
@@ -72,7 +74,7 @@
   &:focus {
     cursor: pointer;
     fill: $accent-color;
-    border: 1px solid #2196f31a;
+    border: 1px solid rgba(33, 150, 243, 0.1);
   }
 }
 
@@ -88,7 +90,7 @@
     width: 100%;
     min-height: 40px;
 
-    border: 1px solid #21212133;
+    border: 1px solid rgba(33, 33, 33, 0.2);
     box-sizing: border-box;
     border-radius: 4px;
 
@@ -144,7 +146,7 @@
     min-height: 120px;
     resize: none;
 
-    border: 1px solid #21212133;
+    border: 1px solid rgba(33, 33, 33, 0.2);
     box-sizing: border-box;
     border-radius: 4px;
 
@@ -155,7 +157,7 @@
       font-size: 12px;
       line-height: 1.2;
       letter-spacing: 0.01em;
-      color: rgba(117, 117, 117, 0.502);
+      color: rgba(117, 117, 117, 0.5);
     }
 
     &:focus {
