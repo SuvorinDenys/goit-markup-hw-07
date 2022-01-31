@@ -1,6 +1,7 @@
 body {
   font-family: "Roboto", sans-serif;
   color: #757575;
+  padding-top: 82px;
 }
 
 ul,
@@ -174,6 +175,7 @@ img {
   top: 0;
   left: 0;
   z-index: 2;
+  background-color: #ffffff;
 }
 
 .logotype {
@@ -182,6 +184,16 @@ img {
   font-weight: 700;
   line-height: 1.2;
   color: #000;
+  -webkit-transition: -webkit-text-decoration cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  transition: -webkit-text-decoration cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  -o-transition: text-decoration cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  transition: text-decoration cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  transition: text-decoration cubic-bezier(0.4, 0, 0.2, 1) 250ms, -webkit-text-decoration cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+}
+
+.logotype:hover, .logotype:focus {
+  -webkit-text-decoration: underline #2196f3;
+          text-decoration: underline #2196f3;
 }
 
 .logotype__color {

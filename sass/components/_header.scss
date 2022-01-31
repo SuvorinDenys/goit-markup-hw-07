@@ -5,10 +5,17 @@
   top: 0;
   left: 0;
   z-index: 2;
+  background-color: #ffffff;
 }
 
 .logotype {
   @include logo(#000);
+  transition: text-decoration $cubic $animation;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline $accent-color;
+  }
 
   &__color {
     color: $accent-color;
