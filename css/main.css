@@ -884,6 +884,10 @@ img {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
+.social-links__icon--color {
+  fill: #ffffff;
+}
+
 .form-subscribe {
   display: -webkit-box;
   display: -webkit-flex;
